@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="8">
+        <meta title="BMI計算機">
+        
+        <style>
+            *{
+                text-align:center;
+                font-family: 微軟正黑體;   
+            }
+            body{
+                padding-top: 80px;
+                padding-bottom: 50px;
+                background-color:azure;
+            }
+            
+            h1{
+                font-size: 50px;
+                padding-bottom: 10px;
+                color: darkslategray;
+            }
+            
+            #calculate{
+                background-color: cadetblue;
+                color: white;
+                padding: 10px 50px;
+                border-radius: 12px;
+                border: 0px;
+                margin-top: 20px;
+            }
+            
+            .input{
+                border-radius: 4px;
+                border: 1px solid cadetblue;
+                color: cadetblue;
+            }
+            
+            footer {
+                /* 設定footer的高度 */
+                height: 5%;
+                background-color: black;
+                /* 設定footer絕對位置在底部 */
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                color: white;
+            }
+            
+            #result{
+                padding-top: 20px;
+                width: 50%;
+                margin:0px auto;
+            }
+
+        </style>
+        
+        <script>
+            
+            function f01(){
+                var h=document.getElementById("height").value;
+                var w=document.getElementById("weight").value;
+                var mh=h/100;
+                var BMI=(w/(mh*mh)).toFixed(2);
+                
+                if(BMI=="NaN"){
+                    alert("請輸入正確的數值");
+                    return;
+                }
+                
+                
+                if(BMI<18.5) {
+                    status = '過輕';
+                } 
+                else if(18.5<=BMI && BMI<24) {
+                    status = '理想';
+                } 
+                else if(24<=BMI && BMI<27) {
+                    status = '過重';
+                } 
+                else if(27<=BMI && BMI<30) {
+                    status = '輕度肥胖';
+                } 
+                else if(30<=BMI && BMI<35) {
+                    status = '中度肥胖';
+                } 
+                else if(BMI>=35) {
+                    status = '重度肥胖';
+                }
+                
+                document.getElementById("result01").innerHTML="計算結果";
+                document.getElementById("result02").innerHTML="身高："+h+"公分";
+                document.getElementById("result03").innerHTML="體重："+w+"公斤";
+                document.getElementById("result04").innerHTML="BMI："+BMI+","+status;
+                //alert("BMI="+BMI+","+status);
+
+            }
+            
+            
+        </script>
+    </head>
+    
+    <body>
+        
+        <h1>BMI計算機</h1>
+        <p>請輸入身高(公分)：<input type="text" class="input" id="height"></p>
+        <p>請輸入體重(公斤)：<input type="text" class="input" id="weight"></p>
+        <button id="calculate" onclick="f01()">計算</button>
+        
+        <div id="result">
+            <p id="result01"></p>
+            <span id="result02"></span><br>
+            <span id="result03"></span><br>
+            <span id="result04"></span><br>
+        </div>
+        <footer>
+            BMI Calculator
+        </footer>
+            
+        
+    </body>
+</html>
