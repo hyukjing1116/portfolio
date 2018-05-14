@@ -1,0 +1,406 @@
+body{
+	background-image: url(images/bg.jpg);
+    opacity: 0.8;
+    margin:0;padding:0;border:0;font-family:"微軟正黑體";vertical-align:baseline;
+	
+}
+h3{
+	margin:0;	
+}
+
+.main {
+	padding: 3em 0;
+	
+}
+   
+.main h1 {
+    font-size: 2.8em;
+    text-align: center;
+    color:  #fff;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.forms{
+	margin:3em auto;
+	width:50%;
+	text-align: center;
+	}
+.format{
+	float:left;
+	width:49.35%;
+	background:#fff;
+    margin-bottom: 15px;
+}
+.format h3{
+	font-size: 1.5em;
+    color: #fff;
+    padding: .7em;
+    background:#5599FF;
+    text-align: center;
+}
+
+.register{
+	padding:2em;
+	background: url(images/bg2.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    
+}
+.login{
+	padding:2em;
+	background: url(images/bg3.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    
+}
+
+.format input {
+    padding: 10px 10px 10px 40px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 82.5%;
+}
+.format input[type="text"]{
+	background:url(images/1.png) no-repeat 12px 10px;
+}
+.format input[type="password"]{
+	background:url(images/2.png) no-repeat 11px 9px;
+}
+.format input[type="email"]{
+	background:url(images/3.png) no-repeat 11px 9px;
+}
+.format input[type="password"]:nth-child(2) {
+    margin:1.5em 0;
+}
+.format input[type="email"]{
+    margin: 1.5em 0 2.13em;
+}
+
+.checkbox {
+    font-size:1em;
+	font-weight:400;
+	color:#fff;
+	margin: 1.5em 0 0 0em;
+    position: relative;
+	padding-left: 38px;
+    cursor: pointer;
+}
+
+.checkbox a{
+	color: #66FFFF;
+	transition:.5s ease-in;
+	
+}
+.checkbox a:hover {
+	color:#fff;
+	transition:.5s ease-in;
+	
+}
+	
+
+.checkbox i {
+	position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    
+}
+.checkbox input + i:after,.radio input + i:after {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s;
+    
+}
+.checkbox input:checked + i:after,.radio input:checked + i:after{
+    opacity: 1;
+}
+.checkbox input,.radio input {
+    position: absolute;
+    left: -9999px;
+}
+.checkbox input + i:after {
+    content: '';
+    background: url("images/4.png") no-repeat 0px 2px;
+    top: 0px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.format input[type="submit"]{
+    padding: 10px 0;
+    font-size: 1em;
+    color: #262122;
+    border: none;
+    width: 100%;
+    background:#fff;
+    cursor: pointer;
+    margin:1.5em 0 0;
+}
+.format2 input[type="submit"] {
+    background:#fff;
+}
+
+.format input[type="submit"]:hover{
+	background:#5599FF;
+    transition:.5s ease-in;
+}
+.format2 input[type="submit"]:hover{
+	background-color: darkseagreen;
+    transition:.5s ease-in;
+}
+
+.format h4{
+	font-size: 1.2em;
+    color: #fff;
+    margin: 1.5em 0 1em;
+    text-align: center;
+	font-weight: 300;
+}
+::-webkit-input-placeholder {
+	color: #ddd !important;
+}
+
+.format2{
+	float:right;
+}
+.remember_left{
+	float:left;
+    padding:0.5em 0;
+}
+.remember_right{
+	float:right;
+    padding:0.5em 0;
+}
+.remember_right a{
+	font-size:1em;
+	color:#fff;
+	text-decoration:underline;
+}
+
+.format h5{
+	font-size: 14px;
+    color: #fff;
+    margin:2em 0 0;
+    text-align: center;
+}
+.format h5 a{
+    color: #66FFFF;
+    text-decoration: underline;
+}
+.format h5 a:hover{
+	color:#fff;
+}
+.remember_right a:hover{
+	color: #66FFFF;
+}
+
+h5.rest {
+    padding-bottom: 1.55em;
+}
+
+.login-head h3 {
+    background-color: darkseagreen;
+}
+
+/*游標指過去時加陰影*/
+.format:hover{
+    box-shadow:0px 0px 10px #262122;
+    z-index: 1;
+}
+
+@media only screen and (max-width:1280px) {
+.forms {
+	margin: 3em auto;
+	width: 58%;
+	text-align: center;
+}
+.checkbox {
+	font-size: 0.9em;
+}
+.remember_right a {
+	font-size: 0.9em;
+}
+}
+@media only screen and (max-width:1080px) {
+.forms {
+    width: 70%;
+}
+}
+
+@media only screen and (max-width:991px) {
+.forms {
+    width: 75%;
+}
+}
+@media only screen and (max-width:800px) {
+.forms {
+    width: 90%;
+}
+.main h1 {
+	font-size: 2.5em;
+}
+}
+@media only screen and (max-width:768px) {
+.forms {
+    width:100%;
+}
+.format {
+    float:none;
+	margin: 0 auto;
+	
+}
+.format2 {
+    float:none;
+	margin:20px auto;
+}
+}
+@media only screen and (max-width:667px) {
+.forms {
+	width:96%;
+}
+.format {
+    float:none;
+	margin: 0 auto;
+	width: 58.35%;
+}
+.format2 {
+    float:none;
+	margin:20px auto;
+}
+}
+@media only screen and (max-width:640px) {
+.format {
+    float: none;
+    margin: 0 auto;
+    width: 60.35%;
+}
+.format2 {
+    float:none;
+	margin:20px auto;
+}
+}
+@media only screen and (max-width:600px) {
+.format {
+    width: 64.35%;
+    
+}
+
+.remember_left {
+    float:none;
+}
+.remember_right {
+    float:none;
+	margin-left: 50px;
+}
+.format2 {
+    float:none;
+	margin:20px auto;
+}
+.checkbox i {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+}	
+.checkbox {
+    padding-left: 28px !important;
+}
+.format h3 {
+    font-size: 1.4em;
+}
+}
+
+@media only screen and (max-width:568px) {
+.format {
+    width: 68.35%;
+}
+.format2 {
+    float:none;
+	margin:20px auto;
+}
+}
+
+@media only screen and (max-width:480px) {
+.main h1 {
+    font-size: 2.1em;
+	}
+.format {
+    float:none;
+    width:80.35%;
+	 margin: 0 auto;
+}
+.format2 {
+    float:none;
+	margin: 20px auto;
+}
+.format h3 {
+    font-size: 1.1em;
+	letter-spacing: 2px;
+}
+
+}
+@media only screen and (max-width:414px) {
+.format {
+    float: none;
+    width: 95.35%;
+    margin: 0 auto;
+}
+.format2 {
+    float:none;
+	margin: 20px auto;
+}
+.main h1 {
+    font-size: 1.5em;
+}
+	
+}
+@media only screen and (max-width:384px) {
+.format {
+    float: none;
+    width: 99.35%;
+    margin: 0 auto;
+}
+.format2 {
+    float:none;
+	margin: 20px auto;
+}
+}
+@media only screen and (max-width:320px) {
+	.main {
+    padding: 2em 0;
+}
+	.main h1 {
+    font-size: 1.3em;
+	letter-spacing: 2px;
+}
+.forms {
+    margin: 2em auto;
+}
+.format {
+    width: 92.35%;
+    margin: 20 auto;
+}
+.format input[type="text"], .format input[type="password"], .format input[type="email"] {
+    outline: none;
+    padding: 8px 8px 8px 28px;
+}
+.format input[type="text"] {
+    background: url(images/1.png) no-repeat 8px 8px;
+}
+.format input[type="password"] {
+    background: url(images/2.png) no-repeat 8px 8px;
+}
+.format input[type="email"] {
+    background: url(images/3.png) no-repeat 8px 8px;
+}
+.format h3 {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+}
